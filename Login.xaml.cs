@@ -75,8 +75,15 @@ namespace AppconLogin
                     DialogResult = true;
                     return;
                 }
-                DialogResult = true;
             }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña no válidos");
+                DialogResult = true;
+                return;
+            }
+            DialogResult = true;
+            
         }
     }
 }
